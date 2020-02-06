@@ -35,5 +35,4 @@ let bookChapterListFive = tableOfContentsFive.querySelectorAll('li');
 tableOfContentsFive.insertBefore(bookChapterListFive[9], bookChapterListFive[2]);
 tableOfContentsFive.insertBefore(bookChapterListFive[3], bookChapterListFive[2]);
 tableOfContentsFive.insertBefore(bookChapterListFive[4], bookChapterListFive[2]);
-console.log('tableOfContentsFive: ', tableOfContentsFive);
-console.log('bookChapterListFive: ', bookChapterListFive);
+
