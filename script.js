@@ -36,3 +36,10 @@ tableOfContentsFive.insertBefore(bookChapterListFive[9], bookChapterListFive[2])
 tableOfContentsFive.insertBefore(bookChapterListFive[3], bookChapterListFive[2]);
 tableOfContentsFive.insertBefore(bookChapterListFive[4], bookChapterListFive[2]);
 
+/* Добавление главы 8 в книге №6 */
+let tableOfContentsSix = document.querySelectorAll('ul')[5];
+let bookChapterListSix = tableOfContentsSix.querySelectorAll('li');
+tableOfContentsSix.insertAdjacentHTML('beforeend', '<li>Глава 8: За пределами ES6</li>');
+tableOfContentsSix.insertBefore(bookChapterListSix[9], bookChapterListSix[10]);
+console.log('tableOfContentsSix: ', tableOfContentsSix);
+console.log('bookChapterListSix: ', bookChapterListSix);
