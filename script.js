@@ -21,9 +21,19 @@ let bookTitleNumberThree = document.querySelectorAll('h2');
 bookTitleNumberThree[2].innerHTML = `<a href="https://github.com/azat-io/you-dont-know-js-ru/blob/master/this%20%26%20object%20prototypes
                     /README.md#you-dont-know-js-this--object-prototypes"target="_blank">Книга 3. this и Прототипы Объектов</a></h2>`;
 
-/* Добавление главы в книгу №6 */
-let tableOfContentsSix = document.querySelectorAll('ul')[5];
-let bookChapterListSix = tableOfContentsSix.querySelectorAll('li');
-console.log('tableOfContentsSix: ', tableOfContentsSix);
-console.log('bookChapterListSix: ', bookChapterListSix);
-tableOfContentsSix.appendChild('<li>Глава 8: За пределами ES6</li>')
+/* Изменение  глав в книге №2 */
+let tableOfContentsTwo = document.querySelectorAll('ul')[1];
+let bookChapterListTwo = tableOfContentsTwo.querySelectorAll('li');
+
+tableOfContentsTwo.insertBefore(bookChapterListTwo[6], bookChapterListTwo[4]);
+tableOfContentsTwo.insertBefore(bookChapterListTwo[8], bookChapterListTwo[4]);
+
+/* Изменение глав в книге №5 */
+let tableOfContentsFive = document.querySelectorAll('ul')[4];
+let bookChapterListFive = tableOfContentsFive.querySelectorAll('li');
+
+tableOfContentsFive.insertBefore(bookChapterListFive[9], bookChapterListFive[2]);
+tableOfContentsFive.insertBefore(bookChapterListFive[3], bookChapterListFive[2]);
+tableOfContentsFive.insertBefore(bookChapterListFive[4], bookChapterListFive[2]);
+console.log('tableOfContentsFive: ', tableOfContentsFive);
+console.log('bookChapterListFive: ', bookChapterListFive);
